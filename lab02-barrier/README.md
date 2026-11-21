@@ -5,6 +5,7 @@
 
 ## How to run
 Requires Go 1.22 or newer. No external libraries.
+
     go run ./rendezvous    # rendezvous of two goroutines
     go run .               # barrier for 5 goroutines
 
@@ -23,3 +24,4 @@ Requires Go 1.22 or newer. No external libraries.
 - Rendezvous: signal first, then wait. Waiting first in both goroutines → circular wait → deadlock.
 - Never block while holding a lock: the other goroutines can't get the lock, so everything freezes.
 - Return *Barrier (pointer) so the mutex is never copied.
+
