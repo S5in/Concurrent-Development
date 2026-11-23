@@ -40,5 +40,4 @@ All three programs run 5 goroutines for 3 rounds.
 - `singleuse`: correct in round 1; from round 2 goroutines print Part B without waiting.
 - `.` and `./atomic`: in every round, all Part A lines appear before any Part B line.
 
-## TO DO
-- Race detector not run (needs cgo/gcc on Windows).
+
