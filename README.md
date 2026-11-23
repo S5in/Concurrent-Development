@@ -12,3 +12,4 @@ Each lab is in its own folder with its own README explaining how to run it.
 | 1 | [lab01-mutex](lab01-mutex) | Mutual exclusion (mutex, atomic) and signalling |
 | 2 | [lab02-barrier](lab02-barrier) | Rendezvous and single-use barrier |
 | 3 | [lab03-reusable-barrier](lab03-reusable-barrier) | Reusable two-phase barrier (mutex and atomic) |
+| 4 | [lab04-semaphore](lab04-semaphore) | Semaphore type (buffered channel), signal and multiplex |
