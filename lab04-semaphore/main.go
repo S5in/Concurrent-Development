@@ -86,8 +86,8 @@ func signalTest() {
 // The semaphore starts with N tokens ("wristbands"); each goroutine takes one to
 // enter and gives it back when it leaves. A mutex is the special case N = 1.
 func multiplex() {
-	const N = 3      // max goroutines allowed inside at once
-	const total = 12 // goroutines that want to get in
+	const N = 3               // max goroutines allowed inside at once
+	const total = 12          // goroutines that want to get in
 	sem := NewSemaphore(N, N) // N wristbands
 
 	var inside atomic.Int64 // how many are inside right now (measuring tool only)

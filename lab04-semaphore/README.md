@@ -1,7 +1,10 @@
 # Lab 4 – Semaphores and Multiplex
 
-**Author:** Maksym Redchenko
-**Licence:** GPL-3.0 (see LICENSE in the repo root)
+**Author:** Maksym Redchenko  
+**Licence:** GPL-3.0 (see LICENSE in the repo root)  
+**GitHub:** https://github.com/S5in/Concurrent-Development/tree/main/lab04-semaphore  
+**Full repository:** https://github.com/S5in/Concurrent-Development  
+**Documentation:** [DOCUMENTATION.md](DOCUMENTATION.md) (design, correctness, testing, code reference)
 
 ## How to run
 Requires Go 1.22 or newer. No external libraries.
@@ -12,6 +15,7 @@ Requires Go 1.22 or newer. No external libraries.
 | File | Contents |
 |---|---|
 | main.go | `Semaphore` type (buffered channel), signal test, multiplex |
+| DOCUMENTATION.md | Design, correctness argument, testing/results and code reference |
 
 ## The Semaphore type
 - The semaphore's value is the number of tokens (`struct{}{}`) in a buffered channel.

@@ -1,7 +1,10 @@
 # Lab 6 – Producer–Consumer
 
-**Author:** Maksym Redchenko
-**Licence:** GPL-3.0 (see LICENSE in the repo root)
+**Author:** Maksym Redchenko  
+**Licence:** GPL-3.0 (see LICENSE in the repo root)  
+**GitHub:** https://github.com/S5in/Concurrent-Development/tree/main/lab06-producer-consumer  
+**Full repository:** https://github.com/S5in/Concurrent-Development  
+**Documentation:** [DOCUMENTATION.md](DOCUMENTATION.md) (design, correctness, testing, code reference)
 
 ## How to run
 Requires Go 1.22 or newer. No external libraries.
@@ -14,6 +17,7 @@ Requires Go 1.22 or newer. No external libraries.
 |---|---|
 | main.go | `Semaphore` type (Lab 4), `Buffer` with `Put`/`Get`, test with producers and consumers |
 | wrongorder/main.go | Same, but `Get` locks before waiting on `items` |
+| DOCUMENTATION.md | Design, correctness argument, testing/results and code reference |
 
 ## Requirements
 1. Only one goroutine changes the buffer at a time (mutual exclusion).
@@ -49,4 +53,3 @@ while all producers and the other consumer are blocked on `Mutex.Lock`.
 A Go buffered channel `make(chan int, 5)` is itself a bounded buffer: a send blocks when it
 is full, a receive blocks when it is empty, and access is already mutually exclusive.
 This lab builds the same behaviour from a mutex and two semaphores to show how it works.
-

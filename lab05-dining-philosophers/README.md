@@ -1,7 +1,10 @@
 # Lab 5 – Dining Philosophers
 
-**Author:** Maksym Redchenko
-**Licence:** GPL-3.0 (see LICENSE in the repo root)
+**Author:** Maksym Redchenko  
+**Licence:** GPL-3.0 (see LICENSE in the repo root)  
+**GitHub:** https://github.com/S5in/Concurrent-Development/tree/main/lab05-dining-philosophers  
+**Full repository:** https://github.com/S5in/Concurrent-Development  
+**Documentation:** [DOCUMENTATION.md](DOCUMENTATION.md) (design, correctness, testing, code reference)
 
 ## How to run
 Requires Go 1.22 or newer. No external libraries.
@@ -20,6 +23,7 @@ two solutions are tested under the worst timing.
 | deadlock/main.go | Everyone picks up left then right fork → circular wait → deadlock |
 | footman/main.go | Semaphore with 4 tokens (Lab 4 type) lets at most 4 sit at the table |
 | asymmetric/main.go | Last philosopher picks up right then left fork |
+| DOCUMENTATION.md | Design, correctness argument, testing/results and code reference |
 
 ## Requirements
 1. Only one philosopher can hold a fork at a time (each fork is a channel of size 1).

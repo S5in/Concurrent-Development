@@ -1,7 +1,10 @@
 # Lab 3 – Reusable Barrier
 
-**Author:** Maksym Redchenko
-**Licence:** GPL-3.0 (see LICENSE in the repo root)
+**Author:** Maksym Redchenko  
+**Licence:** GPL-3.0 (see LICENSE in the repo root)  
+**GitHub:** https://github.com/S5in/Concurrent-Development/tree/main/lab03-reusable-barrier  
+**Full repository:** https://github.com/S5in/Concurrent-Development  
+**Documentation:** [DOCUMENTATION.md](DOCUMENTATION.md) (design, correctness, testing, code reference)
 
 ## How to run
 Requires Go 1.22 or newer. No external libraries.
@@ -16,6 +19,7 @@ Requires Go 1.22 or newer. No external libraries.
 | singleuse/main.go | Single-use barrier in a 3-round loop (intentionally broken) |
 | main.go | Two-turnstile barrier with mutex-protected counter |
 | atomic/main.go | Same barrier, counter is `atomic.Int64`, no mutex |
+| DOCUMENTATION.md | Design, correctness argument, testing/results and code reference |
 
 ## Why the single-use barrier fails
 After round 1 the turnstile still holds its token and `arrived` stays at n,
@@ -39,5 +43,4 @@ so exactly one goroutine sees n. Splitting it into `Add` then `Load` is a check-
 All three programs run 5 goroutines for 3 rounds.
 - `singleuse`: correct in round 1; from round 2 goroutines print Part B without waiting.
 - `.` and `./atomic`: in every round, all Part A lines appear before any Part B line.
-
 

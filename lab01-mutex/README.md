@@ -1,10 +1,14 @@
 # Lab 1 – Mutual Exclusion and Signalling
 
-**Author:** Maksym Redchenko
-**Licence:** GPL-3.0 (see LICENSE in the repo root)
+**Author:** Maksym Redchenko  
+**Licence:** GPL-3.0 (see LICENSE in the repo root)  
+**GitHub:** https://github.com/S5in/Concurrent-Development/tree/main/lab01-mutex  
+**Full repository:** https://github.com/S5in/Concurrent-Development  
+**Documentation:** [DOCUMENTATION.md](DOCUMENTATION.md) (design, correctness, testing, code reference)
 
 ## How to run
 Requires Go 1.22 or newer. No external libraries.
+
     go run .               # race demo + mutex + atomic, with timings
     go run ./signalling    # signalling between two goroutines
 
@@ -13,6 +17,7 @@ Requires Go 1.22 or newer. No external libraries.
 |---|---|
 | main.go | Shared counter: unsafe (race), mutex and atomic versions, timed |
 | signalling/main.go | One goroutine signals another with a channel |
+| DOCUMENTATION.md | Design, correctness argument, testing/results and code reference |
 
 ## Results (my PC)
 | Version | Total | Time |
