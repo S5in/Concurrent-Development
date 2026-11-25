@@ -14,3 +14,4 @@ Each lab is in its own folder with its own README explaining how to run it.
 | 3 | [lab03-reusable-barrier](lab03-reusable-barrier) | Reusable two-phase barrier (mutex and atomic) |
 | 4 | [lab04-semaphore](lab04-semaphore) | Semaphore type (buffered channel), signal and multiplex |
 | 5 | [lab05-dining-philosophers](lab05-dining-philosophers) | Dining philosophers: deadlock demo, footman, asymmetric |
+| 6 | [lab06-producer-consumer](lab06-producer-consumer) | Producer–consumer: bounded buffer (mutex + two semaphores), wrong-order deadlock |

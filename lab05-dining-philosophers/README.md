@@ -53,6 +53,3 @@ eventually gets the fork (or seat). In practice no philosopher starves; each eat
 - deadlock: `fatal error: all goroutines are asleep - deadlock!` on every run.
 - footman: finished on every run (tested 10/10).
 - asymmetric: finished on every run (tested 10/10).
-
-## TO DO
-- Race detector not run (needs cgo/gcc on Windows).

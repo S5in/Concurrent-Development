@@ -42,5 +42,3 @@ block in `Acquire` → `all goroutines are asleep - deadlock!` (tested).
 Go queues goroutines blocked on a channel in arrival order, so in practice every waiting
 goroutine eventually gets a token.
 
-## TO DO
-- Race detector not run (needs cgo/gcc on Windows).
